@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f2f2f2;
+    background-image: url('assets/imgs/bg.png');
 }
 
 a, a:visited {
@@ -12,9 +13,13 @@ a:hover, a:active {
 }
 
 nav {
-    margin-bottom: 100px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
     font-family: 'Montserrat', sans-serif;
     background-color: #fff;
+    z-index: 99;
 }
 
 nav li {
@@ -24,14 +29,19 @@ nav li {
 
 .name {
     position: absolute;
-    left: 20px;
     top: 100px;
-    padding: 5px 10px;
+    left: 20px;
+    padding: 5px 10px 3px 10px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     background-color: #ff00ff;
     border-radius: 5px;
+}
+
+main {
+    margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 .content {
@@ -70,10 +80,10 @@ h1 {
 }
 
 .footer {
-    position: relative;
-    top: 100px;
+    position: fixed;
+    bottom: 0px;
     height: 50px;
     background-color: #999;
     border-top: 5px solid #ff00ff;
-    z-index: -99;
+    z-index: 99;
 }
